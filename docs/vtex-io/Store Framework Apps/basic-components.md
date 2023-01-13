@@ -140,7 +140,7 @@ linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summar
 linkTitle="See more"/>
 
 <WhatsNextCard
-title="Product Summary List
+title="Product Summary List"
 description="This block is exported by the Product Summary app and it is responsible for displaying aproducts list in other store blocks."
 linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummarylist"
 linkTitle="See more"/>
