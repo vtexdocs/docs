@@ -105,7 +105,7 @@ linkTitle="See more"/>
 
 <WhatsNextCard
 title="Product Summary"
-description="App responsible for summarizing product information (such as name, price and image) in otherstore blocks, such as the Shelf and the Minicart.""
+description="App responsible for summarizing product information (such as name, price and image) in otherstore blocks, such as the Shelf and the Minicart."
 linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary"
 linkTitle="See more" />
 
@@ -118,7 +118,7 @@ linkTitle="See more"/>
 <WhatsNextCard
 title="Product Summary Brand"
 description="This block is exported by the Product Summary app and it is responsible for displaying theproduct's brand in other store blocks."
-linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummarybrand""
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummarybrand"
 linkTitle="See more"/>
 
 <WhatsNextCard
@@ -141,7 +141,7 @@ linkTitle="See more"/>
 
 <WhatsNextCard
 title="Product Summary List
-description="This block is exported by the Product Summary app and it is responsible for displaying aproducts list in other store blocks.""
+description="This block is exported by the Product Summary app and it is responsible for displaying aproducts list in other store blocks."
 linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummarylist"
 linkTitle="See more"/>
 
