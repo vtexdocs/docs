@@ -17,5 +17,5 @@ seeMore='true'/>
 <WhatsNextCard
 title='New to VTEX IO?'
 description='Build stores and IO apps from scratch with our learning-oriented tutorials.'
-href='/docs/guides'
+link.to='/docs/guides'
 />
