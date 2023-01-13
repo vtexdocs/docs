@@ -5,8 +5,184 @@ hidden: false
 createdAt: "2021-03-17T12:55:23.992Z"
 updatedAt: "2021-10-05T19:50:27.126Z"
 ---
-[block:html]
-{
-  "html": "<style>\n    .flexcontainer {\n        display: flex;\n        flex-wrap: wrap;\n        padding-top: 1rem;\n        padding-bottom: 2rem;\n        justify-content: space-between;\n    }\n\n    .flexcontainer-card {\n        display: flex;\n        flex-direction: column;\n        justify-content: space-between;\n        align-items: flex-start;\n        width: 22rem;\n        margin: 0.5rem;\n        line-height: 1.8;\n    }\n    .see-more {\n        color: rgb(247, 25, 99);\n        text-decoration: none !important;\n    }\n\n    .see-more::after {\n        content: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='14' viewBox='0 -8 59 14' fill='none'><path d='M0 7H57' stroke='rgb(247, 25, 99)'></path><path d='M49 1L57.5 7L49 13' stroke='rgb(247, 25, 99)'></path></svg>\");\n        display: inline-block;\n        margin-left: 6px;\n        text-decoration: none !important;\n    }\n\n    .see-more:hover:after {\n        content: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='14' viewBox='0 -8 59 14' fill='none'><path d='M0 7H57' stroke='rgb(181, 16, 71)'></path><path d='M49 1L57.5 7L49 13' stroke='rgb(181, 16, 71)'></path></svg>\");\n        margin-left: 8px;\n    }\n\n    .see-more:hover {\n        color: rgb(181, 16, 71);\n    }\n    .app-description{\n        font-size: 16px;\n    }\n</style>\n\n<p class=\"app-description\">Storefront components indispensable to create an end-to-end experience for your store’s users.</p>\n\n<div class=\"flexcontainer\">\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Add to cart Button</h3>\n                <div>\n                    A button for adding items into the shopping cart.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-add-to-cart-button\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Breadcrumb</h3>\n                <div>\n                    Navigation scheme that shows a user's browsing history up to their current location in your store.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-breadcrumb\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Footer</h3>\n                <div>\n                    Displays your store's Footer.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-footer\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Google One-Tap Login</h3>\n                <div>\n                    Google One-tap delivers a seamless experience with a small pop-up that can authenticate a user with a streamlined interface. \n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/google-one-tap-login\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Header</h3>\n                <div>\n                    Displays your store's Header.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-header\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Locale Switcher</h3>\n                <div>\n                    Component responsible for changing the current language of the store.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-locale-switcher\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Login</h3>\n                <div>\n                    Handles every functionality related to user login.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-login\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Menu</h3>\n                <div>\n                    Renders the Menu component, displaying a bar containing links and drop-down sub-menus.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-menu\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Minicart</h3>\n                <div>\n                    Fetching data from the Checkout OrderForm API, the Minicart component displays a summary list of all items added by customers in their shopping cart.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-minicart\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Order Placed</h3>\n                <div>\n                    Renders the the orderPlaced page with all order data.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-order-placed\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Product Customizer</h3>\n                <div>\n                    Allows a product's attachments to be made available and ready to be chosen by users from the product page.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-customizer\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Product Identifier</h3>\n                <div>\n                    Shows a product identifier, such as the product reference, product ID, sku EAN or sku reference.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-identifier\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Product List</h3>\n                <div>\n                    Works with Minicar to display all items in the user's cart, informing when some of them are unavailable.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-list\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Product Price</h3>\n                <div>\n                    The app exports blocks related to the product's price, such as list price, selling price and savings.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-price\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Product Quantity</h3>\n                <div>\n                    Allows users to a add a chosen amount of the displayed product in their cart.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-quantity\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Product Specification Badges</h3>\n                <div>\n                    This block is exported by the Product Summary app and it is responsible for displaying badges with the product's specifications in other store blocks.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummaryspecificationbadges\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Product Summary</h3>\n                <div>\n                    App responsible for summarizing product information (such as name, price and image) in other store blocks, such as the Shelf and the Minicart.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Product Summary Attachment List</h3>\n                <div>\n                    This block is exported by the Product Summary app and it is responsible for displaying the product's attachments in other store blocks.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummaryattachmentlist\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Product Summary Brand</h3>\n                <div>\n                    This block is exported by the Product Summary app and it is responsible for displaying the product's brand in other store blocks.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummarybrand\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Product Summary Buy Button</h3>\n                <div>\n                    This block is exported by the Product Summary app and it is responsible for displaying a Buy Button block in other store blocks.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummarybuybutton\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Product Summary Description</h3>\n                <div>\n                    This block is exported by the Product Summary app and it is responsible for displaying the product's description in other store blocks.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummarydescription\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Product Summary Image</h3>\n                <div>\n                    This block is exported by the Product Summary app and it is responsible for displaying the product's image in other store blocks.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummaryimage\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Product Summary List</h3>\n                <div>\n                    This block is exported by the Product Summary app and it is responsible for displaying a products list in other store blocks.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummarylist\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Product Summary Name</h3>\n                <div>\n                    This block is exported by the Product Summary app and it is responsible for displaying the product's name in other store blocks.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummaryname\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Product Summary SKU Selector</h3>\n                <div>\n                    This block is exported by the Product Summary app and it is responsible for displaying the SKU Selector block in other store blocks.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummaryskuselector\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Rich Text</h3>\n                <div>\n                    The Rich Text brings texts to your store and everything else that Markdown language is able to. It converts texts written in Markdown language and displays its content as HTML elements.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-rich-text\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Search</h3>\n                <div>\n                    The VTEX Search app is responsible for handling the new VTEX Intelligent Search solution in IO stores by providing new UI components that enhance the search experience, such as the autocomplete feature.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-search\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Search Result</h3>\n                <div>\n                    Handles the result fetched by the VTEX Search API and displaying it to users. The app exports all store blocks expected in a search results page, such as the filters and the product gallery.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-search-result\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Shelf</h3>\n                <div>\n                    Displays a list of products in the store home page.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-shelf\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n\n    <div class=\"flexcontainer-card\">\n        <article >\n            <div>\n                <h3>Store Image</h3>\n                <div>\n                    Render an pre-defined image on the UI.\n                </div>\n            </div><a href=\"https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-image\" class=\"see-more\">See more</a>\n            <hr></article>\n    </div>\n</div>\n"
-}
-[/block]
+
+<WhatsNextCard
+title="Add to cart Button"
+description="A button for adding items into the shopping cart."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-add-to-cart-button"
+linkTitle="See more"
+/>
+
+<WhatsNextCard
+title="Breadcrumb"
+description="Navigation scheme that shows a user's browsing history up to their current location in your store."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-breadcrumb"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Footer"
+description="Displays your store's Footer." 
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-footer"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Google One-Tap Login"
+description="Google One-tap delivers a seamless experience with a small pop-up that can authenticate a userwith a streamlined interface."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/google-one-tap-login"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Header"
+description="Displays your store's Header."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-header"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Locale Switcher"
+description="Component responsible for changing the current language of the store."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-locale-switcher"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Login"
+description="Handles every functionality related to user login."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-login"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Menu"
+description="Rendersthe Menu component, displaying a bar containing links and drop-down sub-menus."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-menu"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Minicart"
+description="Fetching data from the Checkout OrderForm API, the Minicart component displays a summary list of allitems added by customers in their shopping cart."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-minicart"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Order Placed"
+description="Renders the the orderPlaced page with all order data."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-order-placed"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Product Customizer"
+description="Allows a product's attachments to be made available and ready to be chosen by users from theproduct page."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-customizer"
+linkTitle="See more"/>
+
+<WhatsNextCard
+title="Product Identifier"
+description="Shows a product identifier, such as the product reference, product ID, sku EAN or skureference."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-identifier"
+linkTitle="See more"/>
+
+<WhatsNextCard
+title="Product List"
+description="Works with Minicar to display all items in the user's cart, informing when some of them are unavailable."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-list"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Product Price"
+description="The app exports blocks related to the product's price, such as list price, selling price and savings."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-price"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Product Quantity"
+description="Allows users to a add a chosen amount of the displayed product in their cart."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-quantity"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Product SpecificationBadges"
+description="This block is exported by the Product Summary app and it is responsible fordisplaying badges with the product's specifications in other store blocks."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummaryspecificationbadges"
+linkTitle="See more"/>
+
+<WhatsNextCard
+title="Product Summary"
+description="App responsible for summarizing product information (such as name, price and image) in otherstore blocks, such as the Shelf and the Minicart.""
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Product Summary AttachmentList"
+description="This block is exported by the Product Summary app and it is responsible fordisplaying the product's attachments in other store blocks."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummaryattachmentlist"
+linkTitle="See more"/>
+
+<WhatsNextCard
+title="Product Summary Brand"
+description="This block is exported by the Product Summary app and it is responsible for displaying theproduct's brand in other store blocks."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummarybrand""
+linkTitle="See more"/>
+
+<WhatsNextCard
+title="Product Summary Buy Button"
+description="This block is exported by the Product Summary app and it is responsible for displaying aBuy Button block in other store blocks."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummarybuybutton"
+linkTitle="See more"/>
+
+<WhatsNextCard
+title="Product Summary Description"
+description="This block is exported by the Product Summary app and it is responsible for displayingthe product's description in other store blocks."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummarydescription"
+linkTitle="See more"/>
+
+<WhatsNextCard
+title="Product Summary Image"
+description="This block is exported by the Product Summary app and it is responsible for displaying theproduct's image in other store blocks."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummaryimage"
+linkTitle="See more"/>
+
+<WhatsNextCard
+title="Product Summary List
+description="This block is exported by the Product Summary app and it is responsible for displaying aproducts list in other store blocks.""
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummarylist"
+linkTitle="See more"/>
+
+<WhatsNextCard
+title="Product Summary Name"
+description="This block is exported by the Product Summary app and it is responsible for displaying theproduct's name in other store blocks."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummaryname"
+linkTitle="See more"/>
+
+<WhatsNextCard
+title="Product Summary SKU Selector"
+description="This block is exported by the Product Summary app and it is responsible for displayingthe SKU Selector block in other store blocks."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-product-summary-productsummaryskuselector"
+linkTitle="See more"/>
+
+<WhatsNextCard
+title="Rich Text"
+description="The Rich Text brings texts to your store and everything else that Markdown language is able to. Itconverts texts written in Markdown language and displays its content as HTML elements."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-rich-text"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Search"
+description="TheVTEX Search app is responsible for handling the new VTEX Intelligent Search solution in IO stores byproviding new UI components that enhance the search experience, such as the autocomplete feature."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-search"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Search Result"
+description="Handles the result fetched by the VTEX Search API and displaying it to users. The app exports allstore blocks expected in a search results page, such as the filters and the product gallery."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-search-result"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Shelf"
+description="Displays a list of products in the store home page."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-shelf"
+linkTitle="See more" />
+
+<WhatsNextCard
+title="Store Image"
+description="Render an pre-defined image on the UI."
+linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-image"
+linkTitle="See more" />
