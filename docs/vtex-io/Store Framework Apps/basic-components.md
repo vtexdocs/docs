@@ -6,7 +6,7 @@ createdAt: "2021-03-17T12:55:23.992Z"
 updatedAt: "2021-10-05T19:50:27.126Z"
 ---
 
-<div style="display: 'flex'; flex-wrap: 'wrap'; justify-content: 'space-between'">
+<Flex>
 
 <WhatsNextCard
 title="Add to cart Button"
@@ -189,4 +189,4 @@ description="Render an pre-defined image on the UI."
 linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-image"
 linkTitle="See more" />
 
-</div>
+</Flex>
