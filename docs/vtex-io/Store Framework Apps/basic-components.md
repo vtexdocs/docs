@@ -6,6 +6,8 @@ createdAt: "2021-03-17T12:55:23.992Z"
 updatedAt: "2021-10-05T19:50:27.126Z"
 ---
 
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between">
+
 <WhatsNextCard
 title="Add to cart Button"
 description="A button for adding items into the shopping cart."
@@ -186,3 +188,5 @@ title="Store Image"
 description="Render an pre-defined image on the UI."
 linkTo="https://developers.vtex.com/vtex-developer-docs/docs/vtex-store-image"
 linkTitle="See more" />
+
+</div>
