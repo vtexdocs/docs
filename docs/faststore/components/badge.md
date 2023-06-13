@@ -1,6 +1,7 @@
 ---
 title: Badge
 excerpt: Status descriptors used to emphasize an item's state.
+atomicDesign: 'atoms'
 ---
 
 Badges are status descriptors used to emphasize an item's state.
