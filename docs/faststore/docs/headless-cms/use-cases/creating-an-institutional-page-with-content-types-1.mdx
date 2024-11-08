@@ -1,31 +1,27 @@
 ---
-title: "Creating an institutional page with Content types"
-slug: "creating-an-institutional-page-with-content-types-1"
-hidden: false
-createdAt: "2022-09-20T13:26:38.616Z"
-updatedAt: "2022-09-23T19:41:16.408Z"
+title: "Creating an institutional page with Content Types"
 ---
 
-Content types are templates that structure your documents. They can be pages, publications, articles, events, products, and any other type of content that you want to insert into your project. You can also use them in the CMS to create an institutional page.
+Content Types are templates that structure your documents. They can be pages, publications, articles, events, products, and any other type of content that you want to insert into your project. You can also use them in the CMS to create an institutional page.
 
 To create an institutional page, follow these instructions.
 
 ## Instructions
 
-1. Define the components of your page. In the example below, we use the `ww.vtex.com` page and its title, partners, highlights, and carousel components.
+1. Define the components of your page. In the example below, we use the [VTEX website](https://vtex.com/) and its title, partners, highlights, and carousel components.
 
-  ![](https://cdn.jsdelivr.net/gh/vtexdocs/dev-portal-content@main/images/creating-an-institutional-page-with-content-types-1-0.png)
+    ![](https://cdn.jsdelivr.net/gh/vtexdocs/dev-portal-content@main/images/creating-an-institutional-page-with-content-types-1-0.png)
 
 2. In the cms folder, go to the `content-types.json` file.
 
-  ![](https://cdn.jsdelivr.net/gh/vtexdocs/dev-portal-content@main/images/creating-an-institutional-page-with-content-types-1-1.png)
+    ![](https://cdn.jsdelivr.net/gh/vtexdocs/dev-portal-content@main/images/creating-an-institutional-page-with-content-types-1-1.png)
 
 3. In the `content-type.json` file, create a new content type. To do this, define the following information:
-    
+
     - `id`: content type ID. It is recommended to have a lowercase pattern with no spaces, like with URLs.
     - `name`: name that will be displayed on the page.
     - `configurationSchemaSets`: extra blocks that will configure the page, such as menu settings and slug blocks, for example.
-    
+
     ```json content-type.json
     {
       "id": "landing",
@@ -35,7 +31,7 @@ To create an institutional page, follow these instructions.
     ```
 
 4. Determine the page sections in the `section.json` file. To define the sections, duplicate an existing one and edit it with the new names and descriptions you want on your page.
-    
+
     ```json section.json
     {
       “name” “Hero”,
@@ -73,7 +69,7 @@ To create an institutional page, follow these instructions.
       }
     }
     ```
-    
+
     > ℹ️️ These fields are the structure of your page. Complete them based on what was defined in step one of this guide.
 
 5. After defining the sections, save them. If you want to view the draft, go to the repository for testing. 6. Go to the store to view the final version of your page.
