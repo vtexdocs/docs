@@ -22,6 +22,9 @@ The diagram below shows how the process works, after all the required [configura
 
 When a customer logs in on a B2B marketplace which has Pricing Hub enabled, it will make a `POST` [Get Prices](https://developers.vtex.com/docs/api-reference/pricing-hub#post-/api/pricing-hub/prices) request to the Pricing Hub API to fetch prices information from the B2B Seller’s external prices app. The app will then return the prices information in the response, applying the specific prices associated with each customer email, as set by the seller.
 
+
+>ℹ️ You will need to create a custom component on the front end, in order to display the prices that the app delivers.
+>
 ## Setup
 
 To set up this process, the marketplace and each seller must follow the instructions below.
