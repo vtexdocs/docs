@@ -73,6 +73,7 @@ After successfully submitting the request, the Tax API integration becomes activ
 
 >⚠️ When a purchase is made in a store, the location from which the order is shipped matters for tax calculation purposes. Because of this, when items from [White Label Sellers](https://help.vtex.com/en/tutorial/white-label-seller--5orlGHyDHGAYciQ64oEgKa) are part of an order, tax configuration for the marketplace (`seller 1`) is not taken into account for those items. Each seller must have its own tax service configuration in order for this type of integration function properly.
 
+
 ## Tax calculation request
 
 The external tax calculation service must provide an endpoint, as the `https://sandbox-rest.avatax.com/api/v2/transactions/create` example, that will receive a `POST` request. In this request, Checkout provides a body in a specific format. This means that either the endpoint must be prepared to receive this body format, or the integration must contain a parser to adapt it to the correct format.  
@@ -184,6 +185,10 @@ This body has the main fields:
 | `clientData`          | object | Information regarding the client that placed the order.                                                                                                                     |
 | `paymentData`         | object | Contains an array of payments, where there is information regarding the order payment.                                                                                      |
 | `taxApp`              | object | Contains an object with custom fields specific to the tax application.                                                                                                      |
+
+
+>⚠️  When marketplace provide orderform data to a tax provider installed on **white label seller** it has omit fields like `orderFormId` , `paymentData` and `taxApp` .
+
 
 ### Tax provider response to the request
 
