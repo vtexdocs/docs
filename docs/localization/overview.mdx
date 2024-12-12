@@ -1,0 +1,37 @@
+---
+title: "FastStore SDK"
+slug: "faststore-sdk"
+createdAt: "2024-09-09T10:00:00.000Z"
+updatedAt: ""
+---
+
+The FastStore SDK is a toolkit that provides functions and interfaces for managing the state of key ecommerce features in the browser context. Providing a set of functions and interfaces simplifies tasks like tracking cart items and handling user sessions.
+
+The SDK is organized into four modules with specific properties and behaviors. This track provides more details about each module.
+
+- [Shopping cart](#shopping-cart)
+- [Session](#session)
+- [Search](#search)
+- [Analytics](#analytics)
+
+## Shopping cart
+
+The Cart module controls the state of the shopping cart data structure in the shopper's browser. You can use it to add items to the cart, remove items, and clear the cart, among other tasks. Learn more about [shopping cart functions](LINK).
+
+> ℹ️ Learn more about validating the cart in the shopper browser against the information in the platform with [FastStore API mutations](https://developers.vtex.com/docs/guides/faststore/schema-mutations#cart).
+
+## Session
+
+The Session module manages the state of session information in the shopper browser. This includes currency, channel, localization, and shopper information. Learn more about the [session SDK module](LINK) data structure and usage.
+
+> ℹ️ Learn more about validating the cart in the shopper browser against the information in the platform with [FastStore API mutations](https://developers.vtex.com/docs/guides/faststore/schema-mutations#session).
+
+## Search
+
+The Search module offers functions for implementing a faceted search based on URL parameters. Whenever a shopper searches your store or changes the selected facets, the search module generates a unique and serialized URL and then directs the user to that URL.
+
+Learn more about how to use the [SDK Search module](LINK) in your project.
+
+## Analytics
+
+The Analytics module helps you create a simple, extensive event system to feed your data pool. It is geared towards [Google Analytics 4](https://developers.google.com/analytics/devguides/collection/ga4) but supports other analytics providers. Check the [Analytics](LINK) page to learn more.
