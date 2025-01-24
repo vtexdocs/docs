@@ -113,7 +113,7 @@ If you need to add more than a service to a specific product, you must add more 
 
 ## Removing a service (offering) from a shopping cart
 
-In order to remove a service (offering), you must use the `POST` `https://{accountName}.{environment}.com/api/checkout/pub/orderForm/{orderFormId}/items/{itemPosition}/offerings/remove` endpoint with the service `id` in the request body:
+To remove a service (offering), you must use the `POST` `https://{accountName}.{environment}.com/api/checkout/pub/orderForm/{orderFormId}/items/{itemPosition}/offerings/{serviceId}/remove` endpoint with the service `id` in the request body:
 
 ```json
 {
