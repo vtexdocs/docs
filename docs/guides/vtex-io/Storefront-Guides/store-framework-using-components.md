@@ -2,7 +2,7 @@
 title: "Using components"
 slug: "store-framework-using-components"
 hidden: false
-createdAt: "2024-09-30T13:36:50.810Z"
+createdAt: "2025-01-21T16:36:39.917Z"
 updatedAt: ""
 excerpt: "Discover how components in VTEX IO Store Framework enable you to build your storefront, from basic elements to advanced customizations." 
 ---
@@ -63,13 +63,6 @@ See our guide about how to [develop an app](https://developers.vtex.com/docs/gui
 <Flex>
 
 <WhatsNextCard
-title="Building a carousel using Slider Layout"
-description="Learn how to integrate and customize carousels for your storefront using Slider Layout."
-linkTo="https://developers.vtex.com/docs/guides/vtex-io-documentation-building-a-carousel-using-slider-layout"
-linkTitle="See more"
-/>
-
-<WhatsNextCard
 title="Building a horizontal Product Summary"
 description="Discover the process of building a horizontal Product Summary."
 linkTo="https://developers.vtex.com/docs/guides/vtex-io-documentation-building-a-horizontal-product-summary"
@@ -101,27 +94,6 @@ linkTitle="See more"
 title="Creating a product availability form"
 description="Learn how to create a product availability form with this step-by-step guide."
 linkTo="https://developers.vtex.com/docs/guides/vtex-io-documentation-creating-a-product-availability-form"
-linkTitle="See more"
-/>
-
-<WhatsNextCard
-title="Creating modals using icons"
-description="Explore how to create modals using icons to enhance user experience."
-linkTo="https://developers.vtex.com/docs/guides/vtex-io-documentation-creating-modals-using-icons"
-linkTitle="See more"
-/>
-
-<WhatsNextCard
-title="Rendering a badge on top of a product"
-description="Discover how to render badges on top of products to highlight special offers, discounts, or new arrivals."
-linkTo="https://developers.vtex.com/docs/guides/vtex-io-documentation-rendering-a-badge"
-linkTitle="See more"
-/>
-
-<WhatsNextCard
-title="Using Flex Layout"
-description="Understand the Flex Layout component to create responsive layouts for your store."
-linkTo="https://developers.vtex.com/docs/guides/vtex-io-documentation-using-flex-layout"
 linkTitle="See more"
 />
 
