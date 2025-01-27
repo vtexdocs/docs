@@ -8,7 +8,7 @@ category: "Storefront Development"
 excerpt: "Learn how to set specific styles for your store components to enhance your store's user experience."
 ---
 
-Once you understand blocks and templates and how they render interface components, this guide explains how to customize them according to your store’s identity.
+After understanding blocks and templates and how they render interface components, this guide will show you how to customize them to match your store identity.
 
 The Store Theme allows you to:
 
@@ -19,7 +19,7 @@ The Store Theme allows you to:
 
 To set the default style for your store, you can use the `style.json` file in the `style` folder of the Store Theme app. This single file allows you to customize the appearance of your store by modifying the default definitions declared within it. This approach avoids the need to customize individual components on each page.
 
-For example, you can set the default theme background color to blue by changing the `semanticColors` block’s `base` property:
+For example, you can set the default theme background color to blue by changing the `semanticColors` block's `base` property:
 
 ```json
 "semanticColors": {
@@ -47,12 +47,12 @@ For example, you can set the default theme background color to blue by changing 
 
 > ⚠ The `styles.json` file only accepts [HEX values](https://www.w3schools.com/html/html_colors_hex.asp) to set a color. Using other formats, such as RGB, may break the PWA module.
 
-For detailed instructions on customizing your theme, see the [VTEX Styleguide](https://styleguide.vtex.com/#/Styles), a comprehensive CSS framework that provides guidelines for defining component styles. It includes a detailed explanation of the `styles.json` file structure to help you in your customizations.
+For detailed instructions on customizing your theme, see the [VTEX Styleguide](https://styleguide.vtex.com/#/Styles), a comprehensive CSS framework with guidelines for defining component styles. It includes a detailed explanation of the `styles.json` file structure to help you in your customizations.
 
 ## Setting a specific style for a component type or a single component
 
-The `style.json` file allows for more generic customization of your store’s visual style and can be useful in most scenarios.
+The `style.json` file enables more generic customization of your store visual style and can be useful in most scenarios.
 
-If you aim to create a more distinctive store identity with certain elements featuring unique styles that diverge from the default theme, consider this scenario: Imagine your store primarily uses blue as its main color, but you wish for the text components (created by `rich-text` blocks) to appear in red. Now, if your goal is to make only one specific text component red while keeping the rest in the default blue color, you can achieve this advanced customization by overriding the default styles defined in `styles.json`. This can be accomplished using CSS handles and the `blockClass` prop for the final example.
+If you want to create a more distinctive store identity with certain elements featuring unique styles different from the default theme, consider this scenario: Imagine your store primarily uses blue as its main color, but you want the text components (created by `rich-text` blocks) to display in red. To make only one specific text component red while keeping the rest in the default blue color, you can achieve this advanced customization by overriding the default styles defined in `styles.json`. This can be done using CSS handles and the `blockClass` prop.
 
-To apply advanced customization in your store style, see the guide [Using CSS Handles for store customization](https://developers.vtex.com/docs/guides/vtex-io-documentation-using-css-handles-for-store-customization/).
+To apply advanced customization to your store style, see the guide [Using CSS Handles for store customization](https://developers.vtex.com/docs/guides/vtex-io-documentation-using-css-handles-for-store-customization/).
