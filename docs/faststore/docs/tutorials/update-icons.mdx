@@ -1,0 +1,108 @@
+---
+title: "Update Icons"
+excerpt: Update the Icon compoment to it's latest iteration.
+components:
+  - Icon.tsx
+---
+
+Starting at version xx.xx.xx, FastStore will be using a new Icon library and with it some properties will change.
+At first the old usage will still work but updating the reference will allow your project to use more up to date relases and features.
+Every old icon has an equivalent.
+
+
+
+## Updating
+
+The proccess of updating everything can be a long one so we prepared this guide to help you do it in an automated manner
+
+### Making sure you have the right version
+
+The first to check is if your project uses the `faststore/cli` or `faststore/ui` version that contains the update, the version should be equal or greater to: xx.xx.xx
+
+### Installing dependencies
+
+We will be running something called a [codemod]() to update all your icons in an automated manner, to do that, you need to install a library called `jscodeshift` like this:
+
+``` tsx
+npm install -g jscodeshift
+```
+
+The library can be removed after the update if you wish.
+
+### Creating the codemod file
+
+At the root of your faststore project you need to create a file called `transform-icons.js`
+
+This file will contian the codemod instructions, for that, just paste the following contents into it:
+
+```js
+export const parser = "tsx";
+
+function camelToKebabCase(key) {
+  var result = key.replace(/([A-Z])/g, " $1");
+  return result.split(' ').join('-').toLowerCase();
+}
+
+export default function (file, api) {
+  if (file.path.includes("transform.js")) {
+    return file.source;
+  }
+
+  const j = api.jscodeshift;
+  const root = j(file.source);
+
+  root.find(j.JSXElement, {
+    openingElement: {
+      name: {
+        name: "Icon",
+      }
+    }
+  }).forEach(path => {
+
+    let alreadyChangedSize = false;
+    path.node.openingElement.attributes.forEach(attr => {
+
+      if (attr.name.name === 'name') {
+        attr.value = j.stringLiteral(`fs${camelToKebabCase(attr.value.value)}`)
+      }
+
+      if ((attr.name.name === 'width' || attr.name.name === 'height') && alreadyChangedSize === false) {
+        attr.name.name = "size";
+        alreadyChangedSize = true;
+
+        if (attr.value.value <= 20) {
+          attr.value = j.numericLiteral(20)
+        }
+
+        if (attr.value.value > 20 && attr.value.value <= 24) {
+          attr.value = j.numericLiteral(24)
+        }
+
+        if (attr.value.value > 24) {
+          attr.value = j.numericLiteral(32)
+        }
+
+      }
+    })
+
+    path.node.openingElement.attributes = path.node.openingElement.attributes.filter(
+      attr => attr.name.name !== "weight" && attr.name.name !== "width" && attr.name.name !== "height"
+    )
+  });
+
+  return root.toSource();
+}
+```
+### Running the codemod
+
+To run the codemod, just open a new terminal inside your project folder an run the following command
+
+```tsx
+jscodeshift -t ./transform-icon.js src/ --extensions=tsx
+```
+
+What this command will do is go through every file in your `src` folder and execute a couple of operations:
+
+- It will change the `name` property in every `<Icon>` component so it uses the name of the new icons
+- It will replace your `width` and `height` properties with a single `size` property and adapt it's values to what is accepted by the new icons
+- It will remove the `weight` property from your icons, as it's no longer supported.
